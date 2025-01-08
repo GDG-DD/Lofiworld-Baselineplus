@@ -1,8 +1,9 @@
 {
-  "name": "chillin",
-  "version": "0.0.1",
+  "name": "lofiworld",
+  "version": "0.0.9",
   "private": true,
   "scripts": {
+    "start": "node build",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
@@ -14,11 +15,12 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.6.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@playwright/test": "^1.49.0",
     "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-node": "^5.2.11",
-    "@sveltejs/kit": "^2.15.2",
+    "@sveltejs/kit": "^2.8.5",
     "@sveltejs/vite-plugin-svelte": "^5.0.1",
     "@types/uuid": "^10.0.0",
     "@types/youtube-player": "^5.5.11",
