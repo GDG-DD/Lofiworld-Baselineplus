@@ -28,18 +28,19 @@
 			</span>
 
 			<a
-				href="https://youtube.com/watch?v={nowPlaying.scene?.videoID}"
-				target="_blank"
-				rel="noreferrer"
-				class="tooltip block translate-y-1 text-2xl tooltip-top opacity-80 hover:opacity-100 transition-opacity duration-300"
-				data-tip="Watch on YouTube"
-			>
-				<iconify-icon icon="mdi:youtube"></iconify-icon>
-			</a>
+    href="https://youtube.com/watch?v={nowPlaying.scene?.videoID}"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Watch {nowPlaying.scene?.name} on YouTube"  <-- This line was added
+    class="tooltip block translate-y-1 text-2xl tooltip-top opacity-80 hover:opacity-100 transition-opacity duration-300"
+    data-tip="Watch on YouTube"
+>
+    <iconify-icon icon="mdi:youtube"></iconify-icon>
+</a>
 		</div>
 	</div>
 
-	<button title="Click to change scene" onclick={handleChangeScene} class="label">
+	<button title="Click to change scene" onclick={handleChangeScene} class="label" aria-label="Change Scene">
 		Change Scene
-	</button>
+</button>
 </div>

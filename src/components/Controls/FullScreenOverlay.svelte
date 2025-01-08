@@ -32,12 +32,13 @@
 {#if open}
 	<div class="bg" transition:scale={{ start: 1.1, duration: 350 }}>
 		{#if showClose}
-			<button
-				onclick={handleClose}
-				class="text-3xl btn btn-square btn-link opacity-50 hover:opacity-100 absolute top-4 right-4"
-			>
-				<iconify-icon icon="mdi:close"></iconify-icon>
-			</button>
+		<button
+		onclick={handleClose}
+		class="text-3xl btn btn-square btn-link opacity-50 hover:opacity-100 absolute top-4 right-4"
+		aria-label="Close"
+	>
+		<iconify-icon icon="mdi:close"></iconify-icon>
+	</button>
 		{/if}
 		{@render children?.()}
 	</div>

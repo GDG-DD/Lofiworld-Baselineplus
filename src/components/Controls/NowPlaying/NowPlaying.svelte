@@ -32,14 +32,15 @@
 			<MuteButton class="text-base" bind:muted={userPreferences.muteMusic} />
 
 			<a
-				href="https://youtube.com/watch?v={nowPlaying.station?.trackID}"
-				target="_blank"
-				rel="noreferrer"
-				class="tooltip block translate-y-[3px] text-xl tooltip-top"
-				data-tip="Listen on YouTube"
-			>
-				<iconify-icon icon="mdi:youtube"></iconify-icon>
-			</a>
+    href="https://youtube.com/watch?v={nowPlaying.station?.trackID}"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Listen to {nowPlaying.station?.name} on YouTube"
+    class="tooltip block translate-y-[3px] text-xl tooltip-top"
+    data-tip="Listen on YouTube"
+>
+    <iconify-icon icon="mdi:youtube"></iconify-icon>
+</a>
 		</div>
 
 		{#if shouldMarquee}

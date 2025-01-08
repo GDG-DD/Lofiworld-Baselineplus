@@ -53,6 +53,7 @@
 					onclick={() => showBack && dispatch('back')}
 					class:invisible={!showBack}
 					class="text-3xl btn btn-square btn-link opacity-50 hover:opacity-100"
+					aria-label="Back" 
 				>
 					<iconify-icon icon="mdi:arrow-left"></iconify-icon>
 				</button>
@@ -76,6 +77,7 @@
 				<button
 					onclick={() => (open = false)}
 					class="text-3xl btn btn-square btn-link opacity-50 hover:opacity-100"
+					aria-label="Close"
 				>
 					<iconify-icon icon="mdi:close"></iconify-icon>
 				</button>

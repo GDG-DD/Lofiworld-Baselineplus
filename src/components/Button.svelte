@@ -53,7 +53,7 @@
 	class={button({ grow, iconPlacement, variant, size })}
 >
 	{#if icon}
-		<iconify-icon {icon} class="mr-2 text-lg" />
+	<iconify-icon {icon} class="mr-2 text-lg"></iconify-icon>
 	{/if}
 	<slot />
 </svelte:element>

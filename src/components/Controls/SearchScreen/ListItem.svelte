@@ -13,9 +13,9 @@
 	}
 </script>
 
-<li onclick={handleClick} onkeydown={handleClick} class="list-item">
+<button onclick={handleClick} onkeydown={handleClick} class="list-item" aria-label="Description of list item">
 	{@render children?.()}
-</li>
+</button>
 
 <style lang="postcss">
 	.list-item {
