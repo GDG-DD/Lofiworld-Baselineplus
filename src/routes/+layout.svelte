@@ -59,6 +59,8 @@
 	{/each}
 </svelte:head>
 
+
+
 <MetaTags
 	title="CityHop | Aesthetic walks and drives from around the world"
 	description={siteDescription}

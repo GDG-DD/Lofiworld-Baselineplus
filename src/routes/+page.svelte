@@ -14,6 +14,9 @@
 	import { onMount } from 'svelte';
 	import { fade, fly, scale } from 'svelte/transition';
 
+	import logo from '$images/logo.png'; // Import your first logo
+	import logo2 from '$images/logo2.png'; // Import your second logo
+
 	onMount(() => {
 		const cleanupHeartbeat = setupHeartbeat();
 		const cleanupHotkeys = setupHotkeys();
@@ -41,7 +44,7 @@
 {#if !uiState.isPlaying}
 	<div
 		out:fade={{ duration: 2000 }}
-		class="flex justify-center items-center w-full h-full text-white fixed inset-0 z-50 bg-black"
+		class="flex justify-center items-center w-full h-full fixed inset-0 z-50 bg-custom"
 	>
 		{#key uiState.hasStarted}
 			<div
@@ -49,18 +52,26 @@
 				in:fly|local={{ y: 10, duration: 800, delay: 100 }}
 				class="absolute text-center -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
 			>
+				<!-- Logos with X -->
+				<div class="logo-container">
+					<img src={logo} alt="Logo 1" class="logo" />
+					<span class="logo-separator">X</span>
+					<img src={logo2} alt="Logo 2" class="logo" />
+				</div>
+
+				<!-- Text -->
 				{#if uiState.hasStarted}
 					{#if IS_HALLOWEEN}
-						Happy Halloween...
+						<p>Happy Halloween...</p>
 					{:else if IS_CHRISTMAS}
-						Merry Christmas!
+						<p>Merry Christmas!</p>
 					{:else}
-						Let's go...
+						<p>Let's go...</p>
 					{/if}
 
 					<div class="loader"></div>
 				{:else}
-					Press any key or click anywhere to begin
+					<p>Tap to begin your journey!</p>
 				{/if}
 			</div>
 		{/key}
@@ -82,6 +93,39 @@
 {/if}
 
 <style lang="postcss">
+	/* Set the background color */
+	.bg-custom {
+		background-color: #3C3214;
+	}
+
+	/* Set the text color and font */
+	:global(body) {
+		color: #C8B4C8;
+		font-family: 'Bauhaus Nano', sans-serif;
+	}
+
+	/* Logo container styling */
+	.logo-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem; /* Space between logos and the "X" */
+		margin-bottom: 1rem; /* Add spacing below the logo container */
+	}
+
+	/* Logo styling */
+	.logo {
+		width: 150px; /* Adjust the size of the logos */
+	}
+
+	/* Separator styling */
+	.logo-separator {
+		font-size: 2rem; /* Adjust the size of the "X" */
+		color: #C8B4C8; /* Match the text color */
+		font-weight: bold;
+	}
+
+	/* Loader animation */
 	@keyframes load {
 		0% {
 			width: 0%;
