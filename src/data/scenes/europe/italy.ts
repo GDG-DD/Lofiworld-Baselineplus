@@ -20,7 +20,7 @@ export default {
 			videoID: '9IoroeGhXtg',
 			offset: { start: 60 },
 			tags: [Tags.day],
-			suggestedTrack: genres.jazz.stations.work
+			//suggestedTrack: genres.jazz.stations.work
 		},
 		{
 			name: 'Naples',
@@ -34,14 +34,14 @@ export default {
 			type: SceneTypes.walk,
 			videoID: 'EsFheWkimsU',
 			offset: { start: 60 },
-			suggestedTrack: genres.classical.stations.baroque
+			//suggestedTrack: genres.classical.stations.baroque
 		},
 		{
 			name: 'Rome',
 			type: SceneTypes.drive,
 			videoID: 'ytiM1nMv_xU',
 			offset: { start: 30 },
-			suggestedTrack: genres.jazz.stations.work
+			//suggestedTrack: genres.jazz.stations.work
 		},
 
 		{
@@ -64,7 +64,7 @@ export default {
 			videoID: 'kccv6YJZ0P4',
 			offset: { start: 50 },
 			tags: [Tags.evening],
-			suggestedTrack: genres.classical.stations.baroque
+			//suggestedTrack: genres.classical.stations.baroque
 		}
 	]
 } satisfies Country;

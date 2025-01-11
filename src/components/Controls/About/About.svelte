@@ -2,7 +2,7 @@
 	import Button from '$components/Button.svelte';
 	import FullScreenOverlay from '$components/Controls/FullScreenOverlay.svelte';
 	import logo from '$images/logo.png';
-    import logo2 from '$images/logo2.png'; // Import the second logo
+    import logo2 from '$images/logo2.png';
 	import { clickOutside } from '$lib/actions';
 
 	interface Props {
@@ -14,7 +14,7 @@
 
 <FullScreenOverlay bind:open>
 	<div class="about" use:clickOutside={() => (open = false)}>
-		<div class="logo-container">  <!-- Container for logos and X -->
+		<div class="logo-container">
             <img src={logo} alt="Logo 1" class="logo" />
             <span class="logo-separator">X</span>
             <img src={logo2} alt="Logo 2" class="logo" />
@@ -35,9 +35,9 @@
 
 <style lang="postcss">
 	:global(body) {
-		background-color: #3C3214; /* Set the background color */
-		color: #C8B4C8; /* Set the text color */
-		font-family: 'Bauhaus Nano', sans-serif; /* Set the font */
+		background-color: #3C3214;
+		color: #C8B4C8;
+		font-family: 'Bauhaus Nano', sans-serif;
 	}
 
 	.about {
@@ -48,33 +48,19 @@
 		}
 	}
 
-    /* Logo container styling */
     .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem; /* Space between logos and the "X" */
-        margin-bottom: 1rem; /* Add spacing below the logo container */
+        @apply grid grid-cols-3 justify-items-center items-center gap-4 mb-4; /* Grid layout */
     }
 
-    /* Logo styling */
     .logo {
-        width: 216px; /* Adjust the size of the logos as needed */
+        @apply max-w-[100px] md:max-w-[150px] h-auto; /* Responsive logo size */
     }
 
-    /* Separator styling */
     .logo-separator {
-        font-size: 4.5rem; /* Adjust the size of the "X" */
-        color: #C8B4C8; /* Match the text color */
-        font-weight: bold;
+        @apply text-2xl md:text-4xl font-bold; /* Responsive separator size */
     }
 
-
-	/* Additional styles for the divider */
 	.divider {
-		width: 100%;
-		height: 1px;
-		background-color: #C8B4C8; /* Match the text color */
-		margin: 1rem 0;
+		@apply w-full h-[1px] bg-[#C8B4C8] my-4;
 	}
 </style>

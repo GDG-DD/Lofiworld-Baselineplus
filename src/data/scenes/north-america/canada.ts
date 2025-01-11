@@ -19,7 +19,7 @@ export default {
 			type: SceneTypes.drive,
 			videoID: 'tpPPjtRzX2Q',
 			offset: { start: 30 },
-			suggestedTrack: genres.jazz.stations.coffee
+			//suggestedTrack: genres.jazz.stations.coffee
 		},
 		{
 			name: 'Toronto',

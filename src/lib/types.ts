@@ -24,6 +24,7 @@ export interface Continent {
 	name: string;
 	hidden?: boolean;
 	emoji: string;
+	image: string; // Add the 'image' property for the image URL
 	countries: Country[];
 }
 

@@ -31,7 +31,7 @@ export default {
 			videoID: 'yd_P3j67-SQ',
 			type: SceneTypes.drive,
 			tags: [Tags.night],
-			suggestedTrack: genres.lofi.stations.sleep
+			suggestedTrack: genres.lofi.stations.pianoRadio
 		},
 		{
 			name: 'Oxford',

@@ -19,7 +19,7 @@ export default {
 			type: SceneTypes.drive,
 			videoID: 'lN43inpI2lk',
 			offset: { start: 30 },
-			suggestedTrack: genres.jazz.stations.paris,
+			//suggestedTrack: genres.jazz.stations.paris,
 			tags: [Tags.day]
 		},
 		{
@@ -27,7 +27,7 @@ export default {
 			type: SceneTypes.walk,
 			videoID: '3j-AVL3Pr3w',
 			offset: { start: 30 },
-			suggestedTrack: genres.jazz.stations.paris,
+			//suggestedTrack: genres.jazz.stations.paris,
 			tags: [Tags.night, Tags.evening]
 		},
 		{

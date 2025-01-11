@@ -22,7 +22,7 @@ export default {
 					videoID: 'tMzCwwvHwN0',
 					offset: { start: 86 },
 					tags: [Tags.night],
-					suggestedTrack: genres.classical.stations.chinese
+					//suggestedTrack: genres.classical.stations.chinese
 				}
 			]
 		},
@@ -128,7 +128,7 @@ export default {
 			type: SceneTypes.walk,
 			videoID: 'wVHgby6hBDA',
 			offset: { start: 2058 },
-			suggestedTrack: genres.classical.stations.chinese,
+			//suggestedTrack: genres.classical.stations.chinese,
 			tags: [Tags.night, Tags.day]
 		},
 		{

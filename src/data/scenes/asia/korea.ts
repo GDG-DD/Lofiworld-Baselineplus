@@ -133,7 +133,7 @@ export default {
 			type: SceneTypes.drive,
 			videoID: 'XPRqAkL7Kfk',
 			tags: [Tags.night],
-			suggestedTrack: genres.rnb.stations.korean
+			//suggestedTrack: genres.rnb.stations.korean
 		},
 		{
 			name: 'Jeju Island',

@@ -4,41 +4,91 @@ export const lofi = {
 	name: 'Lofi',
 	emoji: 'hot-beverage',
 	stations: {
-		bollywood: {
-			displayName: 'Bollywood Lofi Radio',
-			name: 'Hindi Lofi 🎵 | Chill n Relax | 24/7 Bollywood Radio',
-			trackID: 'RRb5XV993W0',
+		summerNight: {
+			displayName: 'Midnight Melodies Radio',
+			name: '🌃 Accompanying you through those long summer nights 🌛',
+			trackID: 'PaJWLe8LmgE',
 			live: true
 		},
-		sleep: {
-			displayName: 'Lofi Sleep & Rain Radio',
-			name: '24/7 - lofi sleep, lofi rain💤 beats to relax at night - music for insomnia, anxiety, peaceful dreams',
-			trackID: 'yOKVwLGSBYE',
+		pianoRadio: {
+			displayName: 'Serene Keys FM',
+			name: '🎹 Relaxing Music for Sleep, Studying & Relaxation 24/7 🎹',
+			trackID: '2OM7adQl-YQ',
 			live: true
 		},
-		coffeeShop: {
-			displayName: 'Coffee Shop Radio',
-			name: 'Coffee Shop Radio ☕ - 24/7 lofi & jazzy hip-hop beats',
-			trackID: 'lP26UCnoH9s',
+		tokyoNightvibes: {
+			displayName: 'Twilight Tunes Radio Japan',
+			name: '🗼🚗Lo fi Beats To Sleep, Relax🚗🌃',
+			trackID: '2HhIGIOBoMM',
 			live: true
 		},
-		chillHop: {
-			displayName: 'ChillHop Radio',
-			name: 'Chillhop Radio - jazzy & lofi hip hop beats 🐾',
-			trackID: '5yx6BWlEVcY',
+		streamDay: {
+			displayName: 'Murmurs of the stream',
+			name: '☔ Cozy tunes beside a babbling crook, perfect for reading or relaxing 📚',
+			trackID: 'JFxOtxYJoz0',
 			live: true
 		},
-		girl: {
-			displayName: 'Lofi Girl Radio: Beats to Study/Relax To',
-			name: 'lofi hip hop radio 📚 - beats to relax/study to',
-			trackID: 'jfKfPfyJRdk',
+		retroVibesJapanese: {
+			displayName: 'Tokyo City Lights Lo-fi Radio',
+			name: '🗼🚗Lo fi Beats To Sleep, Relax🚗🌃',
+			trackID: 'Q6lR9u6ey24',
 			live: true
 		},
-		christmas: {
-			name: 'Lofi Christmas Radio',
-			trackID: 'ask1B-m26aU',
+		magicPiano: {
+			displayName: 'Magical Vibes Radio Station',
+			name: '🔮🪄✨ Transporting you to the magical realm! 🍄',
+			trackID: 'NZLRnjtIpyg',
 			live: true,
-			hidden: true
-		}
+		},
+		calmDay: {
+			displayName: 'Tranquil Notes FM',
+			name: '🐬 Soothing music for Mind, Body 🐬',
+			trackID: '4HVqC4zEPDc',
+			live: true,
+	},
+
+retroVibesJapanese2: {
+			displayName: 'Dawn Harmony Radio',
+			name: '🌅 Wake up to peaceful melodies that greet the sunrise 🌞',
+			trackID: 'vPLFwBuAzso',
+			live: true,
+	},
+
+
+waterWaves: {
+			displayName: 'Water Waves FM',
+			name: '🌊 Calming sounds of the sea to unwind and relax 🐚',
+			trackID: 'jvXwD1dMvYM',
+			live: true,
+	},
+
+forestWhisper: {
+			displayName: 'Forest Whisper Radio',
+			name: '🌲 Natures symphony for meditation and tranquility 🍃',
+			trackID: 'cEg0e4FbHeI',
+			live: true,
+	},
+
+starryNight: {
+			displayName: 'Starry Night FM',
+			name: '✨ Celestial sounds for a dreamy night under the stars 🌌',
+			trackID: 'r06hxt83XcQ',
+			live: true,
+	},
+
+gentleBreeze: {
+			displayName: 'Gentle Breeze Radio',
+			name: '🌬️ Refreshing music to soothe your spirit and mind 💨',
+			trackID: 'tGfQYbArQhc',
+			live: true,
+	},
+
+dreamScape: {
+			displayName: 'Dreamscape FM',
+			name: '😴 sad & sleepy beats 💤',
+			trackID: 'A_hmrykwR7g',
+			live: true,
+	},
+		
 	}
 } satisfies Genre;

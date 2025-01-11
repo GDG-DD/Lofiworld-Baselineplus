@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
-	import CopyToClipboard from './CopyToClipboard.svelte';
 	import Fullscreen from './Fullscreen.svelte';
 	import ToolbarButton from './ToolbarButton.svelte';
 
@@ -26,11 +25,9 @@
     bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-transparent
   "
 >
-	<!-- Removed VisitorCount and SupportText -->
+	<!-- Removed CopyToClipboard and the white bar -->
 
-	<div class="h-8 border-white/10 mr-5 border w-px"></div>
-
-	<CopyToClipboard />
+	<img src="/logo.png" alt="Logo" class="h-16 mr-10" />
 
 	<ToolbarButton icon="mdi:heart" action={handleOpenAbout} title="About" />
 	<ToolbarButton icon="mdi:settings" action={handleOpenSettings} title="Settings" />
