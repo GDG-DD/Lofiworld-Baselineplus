@@ -16,6 +16,7 @@
 
 	import logo from '$images/logo.png'; // Import your first logo
 	import logo2 from '$images/logo2.png'; // Import your second logo
+    import headphonesIcon from '$images/headphones.png'; // Import headphones icon
 
 	onMount(() => {
 		const cleanupHeartbeat = setupHeartbeat();
@@ -35,7 +36,7 @@
 		}
 
 		return () => {
-			cleanupHeartbeat();
+			//cleanupHeartbeat();
 			cleanupHotkeys();
 		};
 	});
@@ -73,6 +74,14 @@
 				{:else}
 					<p>Tap to begin your journey!</p>
 				{/if}
+
+				<div class="headphone-suggestion">
+                    <img src={headphonesIcon} alt="Headphones recommended" class="headphone-icon" />
+                    <p class="text-xs">Use headphones for the best experience</p>
+                </div>
+
+                <p class="orientation-suggestion">Enjoy in portrait or landscape mode!</p>
+
 			</div>
 		{/key}
 	</div>
@@ -106,23 +115,29 @@
 
 	/* Logo container styling */
 	.logo-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem; /* Space between logos and the "X" */
-		margin-bottom: 1rem; /* Add spacing below the logo container */
+		@apply grid grid-cols-3 justify-items-center items-center gap-4 mb-4;
 	}
 
 	/* Logo styling */
 	.logo {
-		width: 150px; /* Adjust the size of the logos */
+		@apply max-w-[100px] md:max-w-[150px] h-auto;
 	}
 
 	/* Separator styling */
 	.logo-separator {
-		font-size: 2rem; /* Adjust the size of the "X" */
-		color: #C8B4C8; /* Match the text color */
-		font-weight: bold;
+		@apply text-2xl md:text-4xl font-bold;
+	}
+
+	.headphone-suggestion {
+		@apply flex items-center justify-center mt-4 text-sm;
+	}
+
+	.headphone-icon {
+		@apply w-4 h-4 mr-2;
+	}
+
+	.orientation-suggestion {
+		@apply text-xs mt-2 text-center; /* Center the text */
 	}
 
 	/* Loader animation */
@@ -149,4 +164,23 @@
 			content: '';
 		}
 	}
+
+	@media (min-width: 768px) { /* Adjust breakpoint as needed */
+    p {
+        font-size: 1.2rem; /* Increase base font size */
+    }
+
+    .logo-separator {
+        font-size: 3rem; /* Increase separator size */
+    }
+
+    .headphone-suggestion p {
+        font-size: 1rem; /* Increase headphone suggestion text size */
+    }
+
+    .orientation-suggestion {
+        font-size: 0.9rem; /* Increase orientation suggestion text size */
+    }
+}
+
 </style>
