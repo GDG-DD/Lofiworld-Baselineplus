@@ -31,7 +31,7 @@
 
 			<MuteButton class="text-base" bind:muted={userPreferences.muteMusic} />
 
-			<a
+		<!--	<a
     href="https://youtube.com/watch?v={nowPlaying.station?.trackID}"
     target="_blank"
     rel="noreferrer"
@@ -40,7 +40,7 @@
     data-tip="Listen on YouTube"
 >
     <iconify-icon icon="mdi:youtube"></iconify-icon>
-</a>
+</a> -->
 		</div>
 
 		{#if shouldMarquee}

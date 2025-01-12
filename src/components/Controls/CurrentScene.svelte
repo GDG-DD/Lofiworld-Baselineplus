@@ -27,7 +27,7 @@
 				{nowPlaying.scene?.name}
 			</span>
 
-			<a
+			<!-- <a
     href="https://youtube.com/watch?v={nowPlaying.scene?.videoID}"
     target="_blank"
     rel="noreferrer"
@@ -36,7 +36,7 @@
     data-tip="Watch on YouTube"
 >
     <iconify-icon icon="mdi:youtube"></iconify-icon>
-</a>
+</a> -->
 		</div>
 	</div>
 

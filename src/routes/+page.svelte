@@ -80,7 +80,7 @@
                     <p class="text-xs">Use headphones for the best experience</p>
                 </div>
 
-                <p class="orientation-suggestion">Enjoy in portrait or landscape mode!</p>
+              <!--  <p class="orientation-suggestion">Enjoy in portrait or landscape mode!</p> -->
 
 			</div>
 		{/key}
