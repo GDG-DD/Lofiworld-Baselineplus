@@ -81,4 +81,9 @@
 			}
 		}
 	}
+
+	.label {
+	color: #fa4600; /* Set the text color to orange */
+  }
 </style>
+

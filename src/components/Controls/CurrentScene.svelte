@@ -40,7 +40,13 @@
 		</div>
 	</div>
 
-	<button title="Click to change scene" onclick={handleChangeScene} class="label" aria-label="Change Scene">
-		Change Scene
+	<button title="Click to change location" onclick={handleChangeScene} class="label" aria-label="Change Location">
+		Change Location
 </button>
 </div>
+
+<style>
+	.label {
+	  color: #fa4600; /* Set the text color to your desired orange */
+	}
+  </style>

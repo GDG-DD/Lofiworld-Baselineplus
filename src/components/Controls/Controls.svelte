@@ -75,6 +75,7 @@
 
 	.overlay {
 		@apply fixed z-30 inset-0 flex justify-end flex-col opacity-0 transition-all duration-300 ease-in-out;
+
 	}
 
 	.controls {
